@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.example.android.getvisa.SecondSignupFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/login_details"
+        android:id="@+id/textView18"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/horizontal_bar"
+        android:paddingTop="2dp"
+        android:paddingBottom="4dp"
+        android:layout_margin="5dp"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginIdMan"
+        android:hint="@string/login_id"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textWebEditText"
+        android:layout_marginBottom="4dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/createPassMan"
+        android:hint="@string/create_pass"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginBottom="4dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/confirmPassMan"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="@string/confirm_pass"
+        android:layout_marginBottom="4dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/man_detail"
+        android:id="@+id/textView22"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/horizontal_bar"
+        android:paddingTop="2dp"
+        android:paddingBottom="4dp"
+        android:layout_margin="5dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:id="@+id/project_codeMan"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="@string/p_code"
+        android:layout_marginBottom="4dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:id="@+id/emp_codeMan"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="@string/emp_code"
+        android:layout_marginBottom="4dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:id="@+id/register_man"
+            android:padding="10dp"
+            android:background="@drawable/form_button"
+            android:layout_weight="1.10"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

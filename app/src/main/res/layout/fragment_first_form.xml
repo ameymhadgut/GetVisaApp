@@ -1,0 +1,169 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context="com.example.android.getvisa.FirstFormFragment"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/p_code"
+        android:id="@+id/textView7"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="@string/pcode_hint"
+        android:ems="10"
+        android:id="@+id/projectCode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView8"
+        android:text="@string/passport_details"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/horizontal_bar"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pass_number"
+        android:id="@+id/textView9"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:id="@+id/passportNumber"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pass_loc"
+        android:id="@+id/textView10"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:ems="10"
+        android:id="@+id/passLocation"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pass_issue_date"
+        android:id="@+id/textView11"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/passIssueDate"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:id="@+id/datePickerIssue"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pass_expiry_date"
+        android:id="@+id/textView12"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/passExpiryDate"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:id="@+id/datePickerExpiry"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="@string/discard"
+            android:id="@+id/discardBtn"
+            android:background="@drawable/form_button"
+            android:layout_marginRight="4dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="@string/save"
+            android:id="@+id/saveBtn"
+
+            android:background="@drawable/form_button"
+            android:layout_marginRight="4dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:text="@string/next"
+            android:id="@+id/nextBtn"
+
+            android:background="@drawable/form_button"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
